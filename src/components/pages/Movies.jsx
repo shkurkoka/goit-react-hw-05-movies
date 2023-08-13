@@ -4,7 +4,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 const Movies = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const name = searchParams.get("name");
-    
+
     const [movies, setMovies] = useState([]);
 
     const Search = async (evt) => {
@@ -46,6 +46,7 @@ const Movies = () => {
                     className="SearchForm-input"
                     name="search"
                     type="text"
+                    value={name}
                     autoComplete="off"
                     autoFocus
                     placeholder="Search images and photos"
