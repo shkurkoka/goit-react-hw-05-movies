@@ -20,7 +20,7 @@ const MovieDetails = () => {
                 const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=en-US`, options);
                 const data = await response.json();
                 setMovieContext(data);
-                console.log(data);
+                // console.log(data);
             } catch (err) {
                 console.error(err);
             }
